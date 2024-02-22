@@ -1,17 +1,17 @@
-// NavBar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import the CSS file for styling
-import logo from './images/commerce-globe-icon.png';
+import CommerceLogo from './images/commerce-globe-icon.png';
 
 const Navbar = () => {
     return (
         <div className="navbar">
-            <img src= {logo} alt = "Commerce Bank Logo" className= "logo" />
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-            <a href="#">Budget Tracking</a>
-            <a href="#">Payments</a>
-            <a href="#">Contact Us</a>
+            <img src= {CommerceLogo} alt="Commerce Bank Logo" className="logo" />
+            <Link to="/signin">Login</Link>
+            <Link to="/register">Register</Link>
+            <Link to="/budget">Budget Tracking</Link>
+            <Link to="/payments">Payments</Link>
+            <Link to="/contact">Contact Us</Link>
         </div>
     );
 }
