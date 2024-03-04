@@ -1,0 +1,18 @@
+import { initializeApp } from "firebase/app";
+import {getAuth} from 'firebase/auth'
+import {getDatabase} from 'firebase/database'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA7xBYmO6bkrvjrUtGaGvGd66TueyRKSz0",
+  authDomain: "bankproject-33b2f.firebaseapp.com",
+  projectId: "bankproject-33b2f",
+  storageBucket: "bankproject-33b2f.appspot.com",
+  messagingSenderId: "421124374785",
+  appId: "1:421124374785:web:6867a8bbbb69737f4f1b00",
+  measurementId: "G-EH44XFP3SV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth()
+export const Database = getDatabase()
